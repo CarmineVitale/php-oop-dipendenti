@@ -25,7 +25,7 @@ include_once __DIR__ . '/classes/Pulizia.php'; ?>
                 <td><?php echo $item->nome; ?></td>
                 <td><?php echo $item->cognome ; ?></td>
                 <td><?php echo $item->ufficio; ?></td>
-                <td><?php echo $item->stipendio; ?></td>
+                <td><?php echo "€ {$item->stipendio}"; ?></td>
             </tr>
            <?php } ?>
         
