@@ -4,8 +4,8 @@ class Persona {
     public $nome;
     public $cognome;
 
-    public function __construct($_matricola, $_nome, $_cognome) {
-        $this->matricola = $_matricola;
+    public function __construct( $_nome, $_cognome) {
+        
         $this->nome = $_nome;
         $this->cognome = $_cognome;
     }
@@ -13,6 +13,6 @@ class Persona {
         return $this->nome . ' ' . $this->cognome;
     }
 }
-$persona1 = new Persona(rand(1000, 9000), 'Carmine', 'Vitale');
+
 
 ?>

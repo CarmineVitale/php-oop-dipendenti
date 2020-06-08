@@ -1,0 +1,23 @@
+.app {
+    margin:0 auto;
+    width: 600px;
+}
+h1,
+h2 {
+    text-align: center;
+}
+th ,
+td {
+    border-bottom: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background-color: green;
+    color: yellow; 
+}
+table {
+    width: 600px;
+    height: 200px;
+    border-collapse: collapse;
+}
