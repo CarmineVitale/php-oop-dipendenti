@@ -14,8 +14,14 @@ class Dirigente extends Persona {
     public function printAll() {
         return $this->nomeCognome() . ' ' . $this->ufficio . ' ' . $this->stipendio;
     }
+    public function RAL($num) {
+        if (!is_int($num)) {
+            throw new Exception('Il parametro non è un numero');
+        }
+        return $this->stipendio * $num;
+    }
 }
-//$dir1 = new Dirigente('Carmine', 'Vitale', '105C', 2000)
+
 $dirigenti = [
     ['Paolo', 'Duzioni', '106A', rand(2000,5000)],
     ['Carmine', 'Vitale', '105C', rand(500 ,1000)],

@@ -17,7 +17,8 @@ include_once __DIR__ . '/classes/Pulizia.php'; ?>
             <th>Nome</th>
             <th>Cognome</th>
             <th>Ufficio</th>
-            <th>Stipendio</th>
+            <th>Stipendio mensile</th>
+            <th>Stipendio annuo</th>
         </tr>
         
            <?php foreach ($org as $item) { ?>
@@ -26,6 +27,12 @@ include_once __DIR__ . '/classes/Pulizia.php'; ?>
                 <td><?php echo $item->cognome ; ?></td>
                 <td><?php echo $item->ufficio; ?></td>
                 <td><?php echo "€ {$item->stipendio}"; ?></td>
+                <td><?php try {
+                    echo '€' . ' ' . $item->RAL(12);
+                }
+                catch (Exception $e) {
+                    echo $e->getMessage() . '<br> Errore a linea ' . $e->getLine();; 
+                }?></td>
             </tr>
            <?php } ?>
         
@@ -49,7 +56,9 @@ include_once __DIR__ . '/classes/Pulizia.php'; ?>
         <?php } ?>
     </table>
     </div>
-
-    
+    <!-- <div class="prova">
+        <h3>Prova</h3>
+        <p>Stipendio annuo di Carmine:</p>
+    </div> -->
 </body>
 </html>
