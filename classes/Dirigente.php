@@ -11,9 +11,9 @@ class Dirigente extends Persona {
         $this->stipendio = $_stipendio;
     }
 
-    public function printAll() {
-        return $this->nomeCognome() . ' ' . $this->ufficio . ' ' . $this->stipendio;
-    }
+    // public function printAll() {
+    //     return $this->nomeCognome() . ' ' . $this->ufficio . ' ' . $this->stipendio;
+    // }
     public function RAL($num) {
         if (!is_int($num)) {
             throw new Exception('Il parametro non è un numero');

@@ -12,9 +12,9 @@ class Pulizia extends Persona {
         
     }
 
-    public function print() {
-        return $this->nomeCognome() . ' ' . $this->orario . ' ' . $this->attrezzatura;
-    }
+    // public function print() {
+    //     return $this->nomeCognome() . ' ' . $this->orario . ' ' . $this->attrezzatura;
+    // }
 
 }
 

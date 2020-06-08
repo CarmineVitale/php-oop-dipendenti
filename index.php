@@ -56,9 +56,5 @@ include_once __DIR__ . '/classes/Pulizia.php'; ?>
         <?php } ?>
     </table>
     </div>
-    <!-- <div class="prova">
-        <h3>Prova</h3>
-        <p>Stipendio annuo di Carmine:</p>
-    </div> -->
 </body>
 </html>
